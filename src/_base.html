@@ -13,16 +13,16 @@
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <a class="title" href="/">Hotland</a>
-        <span class="spacer"></span>
-        <ul class="links">
-          <li><a href="https://github.com/hotland-gov">GitHub</a></li>
-        </ul>
-      </div>
-    </nav>
     <header>
+      <nav>
+        <div class="container">
+          <a class="title" href="/">Hotland</a>
+          <span class="spacer"></span>
+          <ul class="links">
+            <li><a href="https://github.com/hotland-gov">GitHub</a></li>
+          </ul>
+        </div>
+      </nav>
       <div class="container">{% block header %}{% endblock %}</div>
     </header>
     {% if self.content() %}

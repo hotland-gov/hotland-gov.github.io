@@ -193,7 +193,6 @@ main > section > .title {
 }
 
 nav {
-  background-color: var(--color-secondary);
   padding-bottom: var(--padding-thin);
   padding-left: var(--padding-wide);
   padding-right: var(--padding-wide);
