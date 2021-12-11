@@ -52,6 +52,7 @@ footer > .container {
   font-size: var(--font-size-small);
   text-align: center;
   padding-bottom: var(--padding-wide);
+  padding-top: var(--padding-wide);
 }
 
 header {
@@ -93,10 +94,10 @@ header > .container > .title {
 main {
   background-color: var(--color-background);
   margin: 0;
-  padding-bottom: var(--padding-normal);
+  padding-bottom: var(--padding-wide);
   padding-left: var(--padding-wide);
   padding-right: var(--padding-wide);
-  padding-top: var(--padding-normal);
+  padding-top: var(--padding-wide);
 }
 
 main > section {
