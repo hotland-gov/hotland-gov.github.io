@@ -36,4 +36,5 @@ if __name__ == "__main__":
 
     copy(Path.cwd() / ".nojekyll")
     copy(Path.cwd() / "favicon.ico")
+    copy(Path.cwd() / "flag.png")
     copy(Path.cwd() / "index.css")
