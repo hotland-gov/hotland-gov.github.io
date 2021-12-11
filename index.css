@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap");
+
+:root {
+  --font-family: "Nunito", sans-serif;
+  --font-size-ratio: 1.25;
+  --font-size-normal: 1rem;
+  --font-size-tiny: calc(var(--font-size-small) / var(--font-size-ratio));
+  --font-size-small: calc(var(--font-size-normal) / var(--font-size-ratio));
+  --font-size-medium: calc(var(--font-size-normal) * var(--font-size-ratio));
+  --font-size-large: calc(var(--font-size-medium) * var(--font-size-ratio));
+  --font-size-huge: calc(var(--font-size-large) * var(--font-size-ratio));
+  --font-size-super: 3rem;
+
+  --color-background: #ffffff;
+  --color-secondary: #eeeeee;
+  --color-foreground: #111111;
+  --color-important: #113377;
+
+  --padding-thin: 5px;
+  --padding-normal: 10px;
+  --padding-wide: 20px;
+  --padding-super: 300px;
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    --padding-super: 120px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #111111;
+    --color-secondary: #333333;
+    --color-foreground: #ffffff;
+    --color-important: #cceeff;
+  }
+}
+
+body {
+  background-color: var(--color-secondary);
+  margin: 0;
+}
+
+footer {
+  background-color: var(--color-secondary);
+}
+
+footer > .container {
+  color: var(--color-foreground);
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
+  text-align: center;
+  padding-bottom: var(--padding-wide);
+}
+
+footer > .curve {
+  padding: 0;
+  background-color: var(--color-secondary);
+  fill: var(--color-background);
+  height: calc(var(--padding-super) / 2);
+  width: 100%;
+}
+
+header {
+  background-color: var(--color-background);
+}
+
+header > .container {
+  background-color: var(--color-secondary);
+  padding-bottom: var(--padding-super);
+  padding-left: var(--padding-wide);
+  padding-right: var(--padding-wide);
+  padding-top: var(--padding-super);
+}
+
+header > .container > .description {
+  color: var(--color-foreground);
+  font-family: var(--font-family);
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 750px;
+}
+
+header > .container > .title {
+  color: var(--color-foreground);
+  font-family: var(--font-family);
+  font-size: var(--font-size-super);
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 750px;
+}
+
+header > .curve {
+  padding: 0;
+  background-color: var(--color-background);
+  fill: var(--color-secondary);
+  height: calc(var(--padding-super) / 2);
+  width: 100%;
+}
+
+main {
+  background-color: var(--color-background);
+  margin: 0;
+  padding-bottom: var(--padding-normal);
+  padding-left: var(--padding-wide);
+  padding-right: var(--padding-wide);
+  padding-top: var(--padding-normal);
+}
+
+main > section {
+  margin-bottom: var(--padding-wide);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--padding-wide);
+  max-width: 750px;
+}
+
+main > section > p {
+  color: var(--color-foreground);
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
+}
+
+main > section > p > a {
+  color: var(--color-important);
+  text-decoration: underline;
+}
+
+main > section > .container > .tile > p > a {
+  color: var(--color-important);
+  text-decoration: underline;
+}
+
+main > section > .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main > section > .container > .tile {
+  background-color: var(--color-secondary);
+  border-radius: var(--padding-wide);
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-bottom: var(--padding-wide);
+  padding-left: var(--padding-normal);
+  padding-right: var(--padding-normal);
+  padding-top: var(--padding-wide);
+  margin: var(--padding-normal);
+  min-width: 300px;
+}
+
+main > section > .container > .tile > h3 {
+  color: var(--color-foreground);
+  font-family: var(--font-family);
+  font-size: var(--font-size-medium);
+  margin: 0;
+}
+
+main > section > .container > .tile > h3 > a {
+  color: var(--color-foreground);
+  text-decoration: none;
+}
+
+main > section > .container > .tile > h3 > a::after {
+  content: " ➞ ";
+  margin: -10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+main > section > .container > .tile > h3 > a:hover::after {
+  color: var(--color-foreground);
+  content: " ➞ ";
+  font-family: var(--font-family);
+  font-size: var(--font-size-medium);
+  margin: 0;
+  opacity: 1;
+}
+
+main > section > .container > .tile > p {
+  color: var(--color-foreground);
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
+  margin: 0;
+}
+
+main > section > .column {
+  flex-direction: column;
+}
+
+main > section > .title {
+  color: var(--color-foreground);
+  font-family: var(--font-family);
+  font-size: var(--font-size-huge);
+  margin: 0;
+}
+
+nav {
+  background-color: var(--color-secondary);
+  padding-bottom: var(--padding-thin);
+  padding-left: var(--padding-wide);
+  padding-right: var(--padding-wide);
+  padding-top: var(--padding-thin);
+}
+
+nav > .container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+nav > .container > .links {
+  display: flex;
+  list-style: none;
+}
+
+nav > .container > .links > li > a {
+  color: var(--color-foreground);
+  font-family: var(--font-family);
+  padding: var(--padding-normal);
+  text-decoration: none;
+}
+
+nav > .container > .spacer {
+  flex-grow: 1;
+}
+
+nav > .container > .title {
+  color: var(--color-foreground);
+  font-family: var(--font-family);
+  font-size: var(--font-size-medium);
+  font-weight: bold;
+  text-decoration: none;
+}
