@@ -56,11 +56,14 @@ footer > .container {
 }
 
 header {
-  background-color: var(--color-background);
+  background-attachment: fixed;
+  background-image: url("/flag.png");
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header > .container {
-  background-color: var(--color-secondary);
   padding-bottom: var(--padding-super);
   padding-left: var(--padding-wide);
   padding-right: var(--padding-wide);
