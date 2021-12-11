@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Kevin Feng" />
+    <meta
+      name="description"
+      content="Website for the Communist Democratic Utopia of Hotland"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %} | Hotland</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a class="title" href="/">Hotland</a>
+        <span class="spacer"></span>
+        <ul class="links">
+          <li><a href="https://github.com/hotland-gov">GitHub</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="container">{% block header %}{% endblock %}</div>
+      {% if self.content() %}
+        <svg class="curve" viewBox="0 0 600 100" preserveAspectRatio="none">
+          <path d="M 0,0 C 200,100 400,100 600,0" />
+        </svg>
+      {% endif %}
+    </header>
+    {% if self.content() %}
+      <main>{% block content %}{% endblock %}</main>
+    {% endif %}
+    <footer>
+      {% if self.content() %}
+        <svg class="curve" viewBox="0 0 600 100" preserveAspectRatio="none">
+          <path d="M 0,0 C 200,100 400,100 600,0" />
+        </svg>
+      {% endif %}
+      <div class="container">
+        Copyright © 2021 Kevin Feng. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

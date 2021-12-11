@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "hotland"
+version = "0.1.0"
+description = "Website for Hotland."
+authors = ["Kevin Feng"]
+license = "Proprietary"
+packages = [{ include = "./build.py" }]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Jinja2 = "^3.0.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
