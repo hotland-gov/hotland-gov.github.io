@@ -54,14 +54,6 @@ footer > .container {
   padding-bottom: var(--padding-wide);
 }
 
-footer > .curve {
-  padding: 0;
-  background-color: var(--color-secondary);
-  fill: var(--color-background);
-  height: calc(var(--padding-super) / 2);
-  width: 100%;
-}
-
 header {
   background-color: var(--color-background);
 }
@@ -96,14 +88,6 @@ header > .container > .title {
   margin-right: auto;
   margin-top: 0;
   max-width: 750px;
-}
-
-header > .curve {
-  padding: 0;
-  background-color: var(--color-background);
-  fill: var(--color-secondary);
-  height: calc(var(--padding-super) / 2);
-  width: 100%;
 }
 
 main {
